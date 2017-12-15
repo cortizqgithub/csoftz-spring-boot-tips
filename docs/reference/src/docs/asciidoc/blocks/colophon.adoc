@@ -1,0 +1,12 @@
+[discrete]
+= {title}
+(C) 2017 {author} Copyright. Version {revnumber}
+
+Publicado por CSoftZ.
+Published by CSoftZ.
+
+Ninguna parte de esta publicación puede ser reproducida, almacenada en un sistema de recuperación o trasmitida en cualquier
+forma o por cualquier medio, electrónico, mecánico, fotocopiado, grabado, escaneado, sin el permiso previo del publicador.
+
+No part of this publication may be reproduced, stored in a retrieval system or transmitted in any form or by any means,
+electronic, mechanical, photocopying, recoding, scanning or otherwise except, without the prior written permission of the publisher.

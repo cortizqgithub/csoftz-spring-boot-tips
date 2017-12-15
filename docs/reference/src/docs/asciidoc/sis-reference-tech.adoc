@@ -1,0 +1,41 @@
+:title: Spring Boot Tips
+:author: CSoftZ - Carlos Adolfo Ortiz Q.
+:email:  carlosaortiz@yahoo.com
+:revnumber: 1.0.0
+:revdate:   {docdate}
+:subject: Spring Boot Tips
+:keywords: Java, Kotlin, JVM, Scala
+:doctype: book
+:toc: 
+:toc-title: Contents
+:toclevels: 5
+:icons: font
+:lang: en
+:language: javadocript
+:toc-title: Contents
+:table-caption: Table
+:figure-caption: Figure
+:important-caption: Important
+:note-caption: Note
+:caution-caption: Caution
+:warning-caption: Warning
+:version-label: Version
+:doc-tech-only: only
+ifndef::ebook-format[:leveloffset: 1]
+= {title}
+
+[colophon]
+include::blocks/colophon.adoc[]
+
+[preface]
+include::blocks/preface.adoc[]
+
+include::blocks/introduction.adoc[]
+
+include::blocks/master-info/master-info.adoc[]
+
+include::blocks/movements/movements.adoc[]
+
+include::blocks/reports/reports.adoc[]
+
+include::blocks/tech/tech.adoc[]

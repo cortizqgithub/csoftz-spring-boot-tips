@@ -1,0 +1,31 @@
+= Preface
+
+== Conventions
+This text uses some conventions as follows:
+
+NOTE: General notes are written with a call as this one.
+
+TIP: Advices are presented with a call as this one.
+
+IMPORTANT: Relevant comments with a call as this one.
+
+CAUTION: Comments to be aware are presented herein.
+
+WARNING: Comments to put a warning on are presented as this.
+
+.Side Bar
+****
+You will find additional information to clarify concepts or texts.
+****
+
+And finally, a text that looks like a quote.
+
+"In the end, it's not the years in your life that count. It's the life in your years."
+-- Abraham Lincoln
+
+"El secreto de una buena vejez no es otra cosa que un pacto honrado con la soledad."
+-- Gabriel García Márquez (1927-2014) Escritor colombiano.
+
+ifdef::doc-tech-only[]
+CAUTION: To indicate that this text is only present in the technical only documentation.
+endif::doc-tech-only[]

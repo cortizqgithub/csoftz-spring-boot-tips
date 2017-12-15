@@ -1,0 +1,15 @@
+allprojects {
+    repositories {
+        mavenCentral()
+        mavenLocal()
+    }
+}
+
+subprojects {
+    version = '1.0.0.RELEASE'    
+}
+
+configure(allprojects) { project ->
+    group = 'com.crystal.sis.master.info'	
+}
+

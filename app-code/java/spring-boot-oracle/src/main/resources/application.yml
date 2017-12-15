@@ -1,0 +1,32 @@
+#spring.jpa.database-platform=org.hibernate.dialect.Oracle10gDialect
+server:
+  port: 9001
+
+spring:
+  jackson:
+    serialization.write_dates_as_timestamps: false
+  jpa:
+    #database-platform: org.hibernate.dialect.Oracle10gDialect
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    generate-ddl: true
+  datasource:
+    username: cortizq
+    password: Ceiba1234!
+    url: jdbc:oracle:thin:@localhost:1521/XE
+    # Keep the connection alive if idle for a long time (needed in production)
+    #testWhileIdle: true
+    #validationQuery: SELECT 1
+
+
+logging:
+  level:
+    root: info
+    com.csoftz.ceiba.oracle: info
+
+#Properties for Oracle connection using Java config
+oracle:
+  username: cortizq
+  password: Ceiba1234!
+  url: jdbc:oracle:thin:@localhost:1521/XE

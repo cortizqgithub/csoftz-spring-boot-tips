@@ -1,0 +1,13 @@
+= Introducción
+
+ifdef::doc-tech-only[]
+****
+El propósito de esta guía está orientada al usuario técnico que tiene conocimiento avanzados como accesos a servidores, medios de 
+instalación, base de datos ente otros. 
+
+CAUTION: Los textos que van dirigidos a los usuarios técnicos se muestran en estos recuadros, lo cual quiere decir 
+que al leer el manual técnico a su vez está leyendo el manual de usuario final. Esto es conveniente por cuanto los 
+usuarios técnicos, al estar intercalado los textos (que se basan en el manual de usuario final) puedan buscar el 
+tema requerido y referenciar a nivel técnico aspectos de implementación que orienten un eventual soporte.
+****
+endif::doc-tech-only[]

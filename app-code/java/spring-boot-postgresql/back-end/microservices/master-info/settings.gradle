@@ -1,0 +1,8 @@
+rootProject.name = 'master-info'
+
+include 'master-info-domain'
+include 'master-info-common'
+include 'master-info-entity'
+include 'master-info-data'
+include 'master-info-service'
+include 'master-info-api'
