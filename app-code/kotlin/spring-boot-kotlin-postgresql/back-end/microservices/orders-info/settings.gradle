@@ -1,0 +1,8 @@
+rootProject.name = 'orders-info'
+
+include 'orders-info-domain'
+include 'orders-info-common'
+include 'orders-info-entity'
+include 'orders-info-data'
+include 'orders-info-service'
+include 'orders-info-api'
