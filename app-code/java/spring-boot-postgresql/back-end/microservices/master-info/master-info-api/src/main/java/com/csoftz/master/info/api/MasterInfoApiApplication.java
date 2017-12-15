@@ -28,9 +28,9 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
  */
 
 @SpringBootApplication
-@ComponentScan(basePackages = "com.crystal.sis.master.info")
-@EnableJpaRepositories("com.crystal.sis.master.info.data")
-@EntityScan("com.crystal.sis.master.info.entity")
+@ComponentScan(basePackages = "com.csoftz.master.info")
+@EnableJpaRepositories("com.csoftz.master.info.data")
+@EntityScan("com.csoftz.master.info.entity")
 public class MasterInfoApiApplication {
 
 	/**Spring Boot entry point for Microservice to attend master-info data.

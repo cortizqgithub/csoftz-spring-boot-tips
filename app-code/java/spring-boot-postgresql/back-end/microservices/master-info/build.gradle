@@ -10,6 +10,6 @@ subprojects {
 }
 
 configure(allprojects) { project ->
-    group = 'com.crystal.sis.master.info'	
+    group = 'com.csoftz.master.info'
 }
 

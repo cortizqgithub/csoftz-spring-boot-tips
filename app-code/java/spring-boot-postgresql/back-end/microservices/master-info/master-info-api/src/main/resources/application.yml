@@ -24,7 +24,7 @@ spring:
       enabled: true
       
   datasource:
-    url: jdbc:postgresql://localhost:5432/sis-new-poc?currentSchema=master-info
+    url: jdbc:postgresql://localhost:5432/csoftz-master-info?currentSchema=master-info
     username: postgres
     password: Ceiba1234!
   
@@ -33,5 +33,5 @@ logging:
     root: 
     #org.hibernate: debug
     #org.springframework: debug
-    com.crystal.sis.master.info : debug
+    com.csoftz.master.info : debug
     

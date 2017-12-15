@@ -68,6 +68,7 @@ public class RegionService implements IRegionService {
 	 */
 	@Override
 	public List<Region> findAll() {
+		log.debug("Request to get all records (Data tier)");
 		return regionMapper.toDomain(this.regionRepository.findAll());
 	}
 

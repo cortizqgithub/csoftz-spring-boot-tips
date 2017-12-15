@@ -3,7 +3,7 @@
 /* Description:   Interface for Service to retrieve Region information        */
 /* Author:        Carlos Adolfo Ortiz Quirós (COQ)                            */
 /* Date:          Dec.06/2017                                                 */
-/* Last Modified: Dec.06/2017                                                 */
+/* Last Modified: Dec.15/2017                                                 */
 /* Version:       1.1                                                         */
 /* Copyright (c), 2017 CSoftZ                                                 */
 /*----------------------------------------------------------------------------*/
@@ -22,7 +22,7 @@ import com.csoftz.master.info.domain.Region;
  * Interface for Service to retrieve Region information
  *
  * @author Carlos Adolfo Ortiz Quirós (COQ)
- * @version 1.1, Dec.06/2017
+ * @version 1.1, Dec.15/2017
  * @since 1.8 (JDK), Dec.06/2017
  */
 public interface IRegionService {
@@ -37,16 +37,16 @@ public interface IRegionService {
 	Region save(Region region);
 
 	/**
-	 * View all the information for all customers
+	 * View all the information for all regions
 	 * 
-	 * @return List of customers
+	 * @return List of regions
 	 */
 	List<Region> findAll();
 
 	/**
 	 * Locate record from store.
 	 * 
-	 * @return An optional indicating it one is found or not.
+	 * @return An optional indicating if one is found or not.
 	 */
 	Optional<Region> findOne(Long id);
 }
