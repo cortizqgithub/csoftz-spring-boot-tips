@@ -43,8 +43,6 @@ dependencies {
     compile(project(':orders-info-common'))
     compile(project(':orders-info-domain'))
 
-    compileOnly('org.projectlombok:lombok:1.16.18')
-
     compile('org.springframework:spring-context:4.3.12.RELEASE')
     compile('org.hibernate:hibernate-core:5.2.12.Final')
     //compile('org.hibernate:hibernate-java8:5.2.12.Final')    

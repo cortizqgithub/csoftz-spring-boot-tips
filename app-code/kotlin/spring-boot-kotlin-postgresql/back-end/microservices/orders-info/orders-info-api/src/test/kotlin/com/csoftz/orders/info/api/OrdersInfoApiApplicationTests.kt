@@ -3,7 +3,7 @@
 /* Description:   Microservice to attend orders-info data (tests)             */
 /* Author:        Carlos Adolfo Ortiz Quirós (COQ)                            */
 /* Date:          Dec.15/2017                                                 */
-/* Last Modified: Dec.15/2017                                                 */
+/* Last Modified: Dec.18/2017                                                 */
 /* Version:       1.1                                                         */
 /* Copyright (c), 2017 CSoftZ                                                 */
 /*----------------------------------------------------------------------------*/
@@ -22,8 +22,8 @@ import org.springframework.test.context.junit4.SpringRunner
  * Microservice to attend orders-info data (tests)
  *
  * @author Carlos Adolfo Ortiz Quirós (COQ)
- * @version 1.1, Dec.14/2017
- * @since 1.8 (JDK), Dec.14/2017
+ * @version 1.1, Dec.18/2017
+ * @since 1.8 (JDK), Dec.15/2017
  */
 @RunWith(SpringRunner::class)
 @SpringBootTest
