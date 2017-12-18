@@ -1,0 +1,7 @@
+= Links
+Here you will find any useful link to whet your appettite.
+
+== General
+Jul.11/2017 Basic Spring web application in Java, Kotlin and Scala - comparison
+https://rskupnik.github.io/basic-spring-webapp-java-kotlin-scala
+

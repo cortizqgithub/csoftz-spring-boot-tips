@@ -32,10 +32,4 @@ include::blocks/preface.adoc[]
 
 include::blocks/introduction.adoc[]
 
-include::blocks/master-info/master-info.adoc[]
-
-include::blocks/movements/movements.adoc[]
-
-include::blocks/reports/reports.adoc[]
-
-include::blocks/tech/tech.adoc[]
+include::blocks/master-info/links.adoc[]
