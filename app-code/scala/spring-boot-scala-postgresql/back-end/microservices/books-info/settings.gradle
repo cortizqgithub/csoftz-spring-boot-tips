@@ -1,0 +1,8 @@
+rootProject.name = 'books-info'
+
+include 'books-info-domain'
+include 'books-info-common'
+include 'books-info-entity'
+include 'books-info-data'
+include 'books-info-service'
+include 'books-info-api'
