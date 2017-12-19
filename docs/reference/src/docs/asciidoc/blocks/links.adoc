@@ -5,11 +5,26 @@ Here you will find any useful link to whet your appettite.
 Jul.11/2017 Basic Spring web application in Java, Kotlin and Scala - comparison
 https://rskupnik.github.io/basic-spring-webapp-java-kotlin-scala
 
-== Spock
+=== Spock
+The following links are from Petri Kainulainen blog with a mini course about Spock.
+You can find the Spock framework at http://spockframework.org/
+
+. Lesson 1
 Running Unit Tests With Maven – Spock Edition
-https://www.testwithspring.com/lesson/running-unit-tests-with-maven-spock-edition/?utm_source=petri-kainulainen&utm_medium=email&utm_campaign=introduction-to-spock-mini-course
+https://www.testwithspring.com/lesson/running-unit-tests-with-maven-spock-edition/
 
 Running Unit Tests With Gradle - Spock Edition
-https://www.testwithspring.com/lesson/running-unit-tests-with-gradle-spock-edition/?utm_source=petri-kainulainen&utm_medium=email&utm_campaign=introduction-to-spock-mini-course
+https://www.testwithspring.com/lesson/running-unit-tests-with-gradle-spock-edition/
 
+. Lesson 2
+Introduction to Spock Specifications
+https://www.testwithspring.com/lesson/introduction-to-spock-specifications/
+
+. Lesson 3
+Introduction to Feature Methods
+https://www.testwithspring.com/lesson/introduction-to-feature-methods/
+
+. Lesson 4
+Writing Assertions With Spock Framework
+https://www.testwithspring.com/lesson/writing-assertions-with-spock-framework/
 
