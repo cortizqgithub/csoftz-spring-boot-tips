@@ -5,3 +5,11 @@ Here you will find any useful link to whet your appettite.
 Jul.11/2017 Basic Spring web application in Java, Kotlin and Scala - comparison
 https://rskupnik.github.io/basic-spring-webapp-java-kotlin-scala
 
+== Spock
+Running Unit Tests With Maven – Spock Edition
+https://www.testwithspring.com/lesson/running-unit-tests-with-maven-spock-edition/?utm_source=petri-kainulainen&utm_medium=email&utm_campaign=introduction-to-spock-mini-course
+
+Running Unit Tests With Gradle - Spock Edition
+https://www.testwithspring.com/lesson/running-unit-tests-with-gradle-spock-edition/?utm_source=petri-kainulainen&utm_medium=email&utm_campaign=introduction-to-spock-mini-course
+
+

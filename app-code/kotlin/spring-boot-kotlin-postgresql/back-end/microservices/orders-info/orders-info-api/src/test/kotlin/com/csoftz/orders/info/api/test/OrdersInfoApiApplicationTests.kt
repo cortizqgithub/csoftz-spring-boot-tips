@@ -1,17 +1,17 @@
 /*----------------------------------------------------------------------------*/
-/* Source File:   BOOKSINFOAPIAPPLICATIONTEST.SCALA                           */
-/* Description:   Microservice to attend books-info data (tests)              */
+/* Source File:   ORDERSINFOAPIAPPLICATIONTESTS.KT                            */
+/* Description:   Microservice to attend orders-info data (tests)             */
 /* Author:        Carlos Adolfo Ortiz Quirós (COQ)                            */
-/* Date:          Dec.18/2017                                                 */
-/* Last Modified: Dec.18/2017                                                 */
+/* Date:          Dec.15/2017                                                 */
+/* Last Modified: Dec.19/2017                                                 */
 /* Version:       1.1                                                         */
 /* Copyright (c), 2017 CSoftZ                                                 */
 /*----------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------
  History
- Dec.18/2017  COQ  File created.
+ Dec.15/2017  COQ  File created.
  -----------------------------------------------------------------------------*/
-package com.csoftz.books.info.api
+package com.csoftz.orders.info.api.test
 
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -19,20 +19,20 @@ import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.test.context.junit4.SpringRunner
 
 /**
-  * Microservice to attend books-info data (tests)
-  *
-  * @author Carlos Adolfo Ortiz Quirós (COQ)
-  * @version 1.1, Dec.18/2017
-  * @since 1.8 (JDK), Dec.18/2017
-  */
-@RunWith(classOf[SpringRunner])
+ * Microservice to attend orders-info data (tests)
+ *
+ * @author Carlos Adolfo Ortiz Quirós (COQ)
+ * @version 1.1, Dec.19/2017
+ * @since 1.8 (JDK), Dec.15/2017
+ */
+@RunWith(SpringRunner::class)
 @SpringBootTest
-class BooksInfoApiApplicationTest {
+class OrdersInfoApiApplicationTests {
 
-  /**
-    * Ensures that Spring Boot context sucessfully loads.
-    */
-  @Test
-  def contextLoads(): Unit = {
-  }
+    /**
+     * Ensures that Spring Boot context successfully loads.
+     */
+    @Test
+    fun contextLoads() {
+    }
 }
