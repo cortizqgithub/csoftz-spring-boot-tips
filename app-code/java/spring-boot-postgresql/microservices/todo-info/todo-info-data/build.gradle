@@ -23,7 +23,7 @@ dependencies {
     compile(project(':todo-info-common'))
     compile(project(':todo-info-entity'))
 
-    compile 'org.springframework.data:spring-data-jpa:1.11.8.RELEASE'
+    compile 'org.springframework.data:spring-data-jpa:2.0.2.RELEASE'
 
     compile('org.mapstruct:mapstruct-jdk8:1.2.0.Final')
     apt('org.mapstruct:mapstruct-processor:1.2.0.Final')

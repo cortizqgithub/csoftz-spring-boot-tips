@@ -35,18 +35,18 @@ import java.util.Optional;
 @Service
 public class NoteService implements INoteService {
     private final Logger log = LoggerFactory.getLogger(this.getClass());
-    private final INoteRepository regionRepository;
-    private final INoteMapper regionMapper;
+    private final INoteRepository noteRepository;
+    private final INoteMapper noteMapper;
 
     /**
      * Constructor with parameters
      *
-     * @param regionRepository Injects the service to retrieve data.
-     * @param regionMapper     Injects the service to map Region/RegionEntity objects.
+     * @param noteRepository Injects the service to retrieve data.
+     * @param noteMapper     Injects the service to map Note/NoteEntity objects.
      */
-    public NoteService(INoteRepository regionRepository, INoteMapper regionMapper) {
-        this.regionRepository = regionRepository;
-        this.regionMapper = regionMapper;
+    public NoteService(INoteRepository noteRepository, INoteMapper noteMapper) {
+        this.noteRepository = noteRepository;
+        this.noteMapper = noteMapper;
     }
 
     /**
@@ -55,9 +55,9 @@ public class NoteService implements INoteService {
     @Override
     public Note save(Note note) {
         log.debug("Request to save Note : {}", note);
-        NoteEntity noteEntity = regionMapper.toEntity(note);
-        noteEntity = this.regionRepository.save(noteEntity);
-        return regionMapper.toDomain(noteEntity);
+        NoteEntity noteEntity = noteMapper.toEntity(note);
+        noteEntity = this.noteRepository.save(noteEntity);
+        return noteMapper.toDomain(noteEntity);
     }
 
     /**
@@ -66,7 +66,7 @@ public class NoteService implements INoteService {
     @Override
     public List<Note> findAll() {
         log.debug("Request to get all records (Data tier)");
-        return regionMapper.toDomain(this.regionRepository.findAll());
+        return noteMapper.toDomain(this.noteRepository.findAll());
     }
 
     /**
@@ -74,8 +74,9 @@ public class NoteService implements INoteService {
      */
     @Override
     public Optional<Note> findOne(Long id) {
-        NoteEntity noteEntity = this.regionRepository.findOne(id);
-        Note note = this.regionMapper.toDomain(noteEntity);
+        NoteEntity noteEntity = this.noteRepository.getOne(id);
+        //NoteEntity noteEntity = this.noteRepository.findOne(id);
+        Note note = this.noteMapper.toDomain(noteEntity);
         if (note == null) {
             return Optional.empty();
         } else {

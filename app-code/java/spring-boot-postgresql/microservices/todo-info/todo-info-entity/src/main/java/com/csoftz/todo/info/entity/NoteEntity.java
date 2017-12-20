@@ -37,7 +37,7 @@ import java.time.LocalDateTime;
  * @since 1.8 (JDK), Dec.20/2017
  */
 @Entity
-@Table(name = "region")
+@Table(name = "note")
 @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
 @ToString
 @Getter
