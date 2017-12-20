@@ -28,9 +28,9 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
  */
 
 @SpringBootApplication
-@ComponentScan(basePackages = "com.csoftz.master.info")
-@EnableJpaRepositories("com.csoftz.master.info.data")
-@EntityScan("com.csoftz.master.info.entity")
+@ComponentScan(basePackages = "com.csoftz.todo.info")
+@EnableJpaRepositories("com.csoftz.todo.info.data")
+@EntityScan("com.csoftz.todo.info.entity")
 public class TodoInfoApiApplication {
 
     /**
