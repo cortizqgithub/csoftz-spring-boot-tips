@@ -1,5 +1,42 @@
 = csoftz-spring-boot-tips README
+V1.0.3-Dec.20/2017
 
-V1.0.0-Dec.15/2017
-V1.0.1-Dec.18/2017
-V1.0.2-Dec.19/2017
+Whenever there is a need to test a concept about any JVM supported language being studied. 
+They are Java, Kotlin, Scala.
+
+As such you will find in the *_'app-code'_* folder, which contains the source code for back-end servers for 
+several microservices and other POC.
+
+== app-code
+Contains the back-end server side of the POC.
+
+=== Java
+The whole projects contained herein are written in Java 8.
+
+Included projects are:
+
+. *spring-boot-oracle:* Uses Spring Boot V1.5.x.RELEASE and connects to ORACLE database.
+. *spring-boot-postgresql:* Uses Spring Boot and connects to postgresql.
+. *spring-boot-spock-gradle:* A POC about using Spock framework (requires Groovy Language) and gradle build system.
+. *spring-boot-spock-maven:* A POC about using Spock framework (requires Groovy Language) and gradle build system.
+
+=== Kotlin
+The whole projects contained herein are written in Kotlin 1.x.
+
+Included projects are:
+
+. *spring-boot-kotlin-postgresql:* Uses Spring Boot V1.5.x and connects to postgresql.
+
+=== Scala
+The whole projects contained herein are written in Scala 2.x.
+
+Included projects are:
+
+. *spring-boot-scala-postgresql:* Uses Spring Boot 1.5.x and connects to postgresql.
+
+== Concepts
+The idea here is to implement several study projects in Java, Kotlin, Scala using Spring Boot as a
+Proof of Concept. All projects beneath the *_'Microservices_* folder are created as a REST API
+to be consumed as such. The intention is to explore the *_'Microservices_*.
+
+*NOTE:* There is one project written in Spring Boot 2.0 with Reactive support.
