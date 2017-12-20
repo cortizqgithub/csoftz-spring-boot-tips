@@ -43,7 +43,7 @@ dependencies {
     compile(project(':todo-info-service'))
 
     compile('org.springframework.boot:spring-boot-starter-data-jpa')
-    compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.springframework.boot:spring-boot-starter-webflux')
     compile('org.hibernate:hibernate-java8')
     compile('com.fasterxml.jackson.datatype:jackson-datatype-jsr310')
     runtime('org.springframework.boot:spring-boot-devtools')
