@@ -1,0 +1,8 @@
+rootProject.name = 'todo-info'
+
+include 'todo-info-domain'
+include 'todo-info-common'
+include 'todo-info-entity'
+include 'todo-info-data'
+include 'todo-info-service'
+include 'todo-info-api'
