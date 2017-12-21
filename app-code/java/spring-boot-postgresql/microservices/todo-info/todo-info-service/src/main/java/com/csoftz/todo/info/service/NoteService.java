@@ -21,7 +21,10 @@ import com.csoftz.todo.info.service.interfaces.INoteService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
 
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
@@ -70,18 +73,32 @@ public class NoteService implements INoteService {
     }
 
     /**
+     * @see INoteService#findAllFlux()
+     */
+    @Override
+    public Flux<Note> findAllFlux() {
+        log.debug("Request to get all records (Data tier) With Flux");
+        return Flux.fromIterable(this.findAll());
+    }
+
+    /**
      * @see INoteService#findOne(java.lang.Long)
      */
     @Override
     public Optional<Note> findOne(Long id) {
-        NoteEntity noteEntity = this.noteRepository.getOne(id);
-        //NoteEntity noteEntity = this.noteRepository.findOne(id);
-        Note note = this.noteMapper.toDomain(noteEntity);
-        if (note == null) {
-            return Optional.empty();
+        Optional<NoteEntity> noteEntity = this.noteRepository.findById(id);
+        if (!noteEntity.isPresent()) {
+            return Optional.of (Note.builder().creationDate(LocalDateTime.now()).build());
         } else {
-            return Optional.of(note);
+            return Optional.of(this.noteMapper.toDomain(noteEntity.get()));
         }
     }
 
+    /**
+     * @see INoteService#findOneMono(java.lang.Long)
+     */
+    @Override
+    public Mono<Optional<Note>> findOneMono(Long id) {
+        return Mono.just(this.findOne(id));
+    }
 }

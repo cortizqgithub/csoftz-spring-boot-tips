@@ -21,6 +21,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -90,14 +92,29 @@ public class NoteController {
      * GET /notes/:id : get the "id" note.
      *
      * @param id the id of the noteDTO to retrieve
-     * @return the ResponseEntity with status 200 (OK) and with body the noteDTO,
+     * @return the ResponseEntity with status 200 (OK) and with body the 'Note' domain object,
      * or with status 404 (Not Found)
      */
     @GetMapping("/{id}")
-    public Note getNote(@PathVariable Long id) {
+    public Optional<Note> getNote(@PathVariable Long id) {
         log.debug("REST request to get Note : {}", id);
-        return noteService.findOne(id).orElse(Note.builder().noteText("NOT FOUND")
+        return noteService.findOne(id);
+    }
+
+    /**
+     * GET /notes/:id/mono : get the "id" note. Using Project Reactor.
+     *
+     * @param id the id of the noteDTO to retrieve
+     * @return the ResponseEntity with status 200 (OK) and with body the 'Note' domain object,
+     * or with status 404 (Not Found)
+     */
+    @GetMapping("/{id}/mono")
+    public Mono<Optional<Note>> getNoteMono(@PathVariable Long id) {
+        log.debug("REST request to get Note : {}. Uses Project Reactor", id);
+        return this.noteService.findOneMono(id);
+        /*return noteService.findOne(id).orElse(Note.builder().noteText("NOT FOUND")
                 .creationDate(LocalDateTime.now()).updateDate(LocalDateTime.now()).user("SYSUSER").build());
+                */
     }
 
     /**
@@ -109,5 +126,16 @@ public class NoteController {
     public List<Note> findAll() {
         log.debug("REST request to get all records");
         return this.noteService.findAll();
+    }
+
+    /**
+     * Retrieves all Note records from store (uses Project Reactor).
+     *
+     * @return List of Notes
+     */
+    @GetMapping("/all/flux")
+    public Flux<Note> findAllFlux() {
+        log.debug("REST Request to get all records (With Flux)");
+        return this.noteService.findAllFlux();
     }
 }

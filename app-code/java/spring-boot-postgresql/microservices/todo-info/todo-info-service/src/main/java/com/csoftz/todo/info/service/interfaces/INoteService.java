@@ -14,6 +14,8 @@
 package com.csoftz.todo.info.service.interfaces;
 
 import com.csoftz.todo.info.domain.Note;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
 
 import java.util.List;
 import java.util.Optional;
@@ -43,9 +45,23 @@ public interface INoteService {
     List<Note> findAll();
 
     /**
+     * View all the information for all notes (uses Project Reactor).
+     *
+     * @return List of notes.
+     */
+    Flux<Note> findAllFlux();
+
+    /**
      * Locate record from store.
      *
      * @return An optional indicating if one is found or not.
      */
     Optional<Note> findOne(Long id);
+
+    /**
+     * Locate record from store. Uses project Reactor
+     *
+     * @return An optional indicating if one is found or not.
+     */
+    Mono<Optional<Note>> findOneMono(Long id);
 }
