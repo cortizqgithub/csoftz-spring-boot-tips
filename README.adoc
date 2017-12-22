@@ -1,5 +1,5 @@
 = csoftz-spring-boot-tips README
-V1.0.3-Dec.20/2017
+V1.0.4-Dec.22/2017
 
 Whenever there is a need to test a concept about any JVM supported language being studied. 
 They are Java, Kotlin, Scala.
@@ -9,6 +9,9 @@ several microservices and other POC.
 
 == app-code
 Contains the back-end server side of the POC.
+
+=== angular
+Adds an Angular Microservices Client as a POC for using consuming and presenting the information in this client.
 
 === Java
 The whole projects contained herein are written in Java 8.

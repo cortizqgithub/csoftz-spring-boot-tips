@@ -1,7 +1,11 @@
 File:     history.md
 Author:   Carlos Adolfo Ortiz Q
 Date:     Dec.14/2017
-Modified: Dec.20/2017
+Modified: Dec.22/2017
+
+Dec.22/2017 V1.0.4   Tag: V1.0.4-Dec.22/2017
+- Adds an Angular Microservices Client as a POC for using consuming and
+  presenting the information in this client.
 
 Dec.20/2017 V1.0.3   Tag: V1.0.3-Dec.20/2017
 - Adds TODO microservice. OF NOTE it uses Spring Boot V1.5.8.RELEASE
