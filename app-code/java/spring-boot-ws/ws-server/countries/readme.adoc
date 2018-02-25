@@ -1,0 +1,3 @@
+= Countries WSDL Service
+
+This example is based on documentatin present in https://spring.io/guides/gs/producing-web-service/
