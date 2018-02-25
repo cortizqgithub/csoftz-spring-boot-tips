@@ -1,5 +1,5 @@
 = csoftz-spring-boot-tips README
-V1.0.4-Dec.22/2017
+V1.0.5-Feb.25/2018
 
 Whenever there is a need to test a concept about any JVM supported language being studied. 
 They are Java, Kotlin, Scala.
@@ -22,6 +22,8 @@ Included projects are:
 . *spring-boot-postgresql:* Uses Spring Boot and connects to postgresql.
 . *spring-boot-spock-gradle:* A POC about using Spock framework (requires Groovy Language) and gradle build system.
 . *spring-boot-spock-maven:* A POC about using Spock framework (requires Groovy Language) and gradle build system.
+. *spring-boot-ws:* A POC about producing and consuming SOAP Web Services (based in Spring Guides). Uses Spring Boot 1.5.10 over Java 8. *NOTE:* 
+if you use Java 9, it won't compile (not adapted for Java 9.x).
 
 === Kotlin
 The whole projects contained herein are written in Kotlin 1.x.
@@ -40,6 +42,6 @@ Included projects are:
 == Concepts
 The idea here is to implement several study projects in Java, Kotlin, Scala using Spring Boot as a
 Proof of Concept. All projects beneath the *_'Microservices_* folder are created as a REST API
-to be consumed as such. The intention is to explore the *_'Microservices_*.
+to be consumed as such. The intention is to explore the *_'Microservices'_*.
 
 *NOTE:* There is one project written in Spring Boot 2.0 with Reactive support.

@@ -1,7 +1,10 @@
 File:     history.md
 Author:   Carlos Adolfo Ortiz Q
 Date:     Dec.14/2017
-Modified: Dec.22/2017
+Modified: Feb.25/2018
+
+Feb.25/2018 V1.0.5   Tag: V1.0.5-Feb.25/2018
+- Adds a sample tip about using Spring WS (see  spring-boot-ws folder).
 
 Dec.22/2017 V1.0.4   Tag: V1.0.4-Dec.22/2017
 - Adds an Angular Microservices Client as a POC for using consuming and
