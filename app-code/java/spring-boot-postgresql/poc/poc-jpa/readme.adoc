@@ -1,0 +1,5 @@
+= poc-jpa
+
+This is a project to include *_Proof of Concept_* for _JPA_ studies.
+
+* Use this link as a first starting point. http://www.vogella.com/tutorials/JavaPersistenceAPI/article.html
