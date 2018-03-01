@@ -26,6 +26,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 
 @SpringBootApplication
+@SuppressWarnings("WeakerAccess")
 public class PocJpaApplication {
 
     /**

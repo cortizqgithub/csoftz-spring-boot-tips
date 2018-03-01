@@ -1,11 +1,11 @@
 /*----------------------------------------------------------------------------*/
 /* Source File:   TODOENTITY.JAVA                                             */
-/* Description:   JPA To do Entity (Maps to Todo domain object).               */
+/* Description:   JPA To do Entity (Maps to To do domain object).             */
 /* Author:        Carlos Adolfo Ortiz Quirós (COQ)                            */
 /* Date:          Feb.28/2018                                                 */
-/* Last Modified: Feb.28/2018                                                 */
+/* Last Modified: Mar.01/2018                                                 */
 /* Version:       1.1                                                         */
-/* Copyright (c), 2017 CSoftZ                                                 */
+/* Copyright (c), 2018 CSoftZ                                                 */
 /*----------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------
  History
@@ -24,15 +24,16 @@ import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 /**
- * JPA To do Entity (Maps to Todo domain object)
+ * JPA To do Entity (Maps to To do domain object)
  *
  * @author Carlos Adolfo Ortiz Quirós (COQ)
- * @version 1.1, Dec.15/2017
- * @since 1.8 (JDK), Dec.14/2017
+ * @version 1.1, Mar.01/2018
+ * @since 1.8 (JDK), Feb.28/2018
  */
 @Entity
 @Table(name = "todo")
 @Data
+@SuppressWarnings({"unused", "WeakerAccess"})
 public class TodoEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "todo_seq")
