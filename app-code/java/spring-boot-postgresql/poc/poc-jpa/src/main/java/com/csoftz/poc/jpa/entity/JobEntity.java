@@ -33,12 +33,12 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "job")
 @Data
-@SuppressWarnings({"unused", "WeakerAccess"})
+@SuppressWarnings("ALL")
 public class JobEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "job_seq")
     @SequenceGenerator(name = "job_seq", sequenceName = "job_sequence", allocationSize = 1)
     private Long id;
-    private double salery;
+    private double salary;
     private String jobDescr;
 }

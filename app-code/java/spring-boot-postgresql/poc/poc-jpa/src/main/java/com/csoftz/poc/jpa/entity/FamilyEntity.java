@@ -37,14 +37,13 @@ import java.util.List;
 @Entity
 @Table(name = "family")
 @Data
-@SuppressWarnings({"unused", "WeakerAccess"})
+@SuppressWarnings("ALL")
 public class FamilyEntity {
+    @OneToMany(mappedBy = "familyEntity")
+    private final List<PersonEntity> members = new ArrayList<>();
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "family_seq")
     @SequenceGenerator(name = "family_seq", sequenceName = "family_sequence", allocationSize = 1)
     private Long id;
     private String description;
-
-    @OneToMany(mappedBy = "familyEntity")
-    private final List<PersonEntity> members = new ArrayList<>();
 }

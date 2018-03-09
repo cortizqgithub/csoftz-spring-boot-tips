@@ -1,44 +1,49 @@
 /*----------------------------------------------------------------------------*/
-/* Source File:   TODOENTITY.JAVA                                             */
-/* Description:   JPA To do Entity (Maps to To do domain object).             */
+/* Source File:   JBEATEMPLOYEEENTITY.JAVA                                    */
+/* Description:   JPA JBeat Employee Entity (Maps to JBeatEmployee domain     */
+/*                object).                                                    */
 /* Author:        Carlos Adolfo Ortiz Quirós (COQ)                            */
-/* Date:          Feb.28/2018                                                 */
+/* Date:          Mar.01/2018                                                 */
 /* Last Modified: Mar.01/2018                                                 */
 /* Version:       1.1                                                         */
 /* Copyright (c), 2018 CSoftZ                                                 */
 /*----------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------
  History
- Feb.28/2018  COQ  File created.
+ Mar.01/2018  COQ  File created.
  -----------------------------------------------------------------------------*/
 
 package com.csoftz.poc.jpa.entity;
 
 import lombok.Data;
 
+import javax.persistence.Basic;
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.SequenceGenerator;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 /**
- * JPA To do Entity (Maps to To do domain object)
+ * JPA JBeat Employee Entity (Maps to JBeatEmployee domain object)
  *
  * @author Carlos Adolfo Ortiz Quirós (COQ)
  * @version 1.1, Mar.01/2018
- * @since 1.8 (JDK), Feb.28/2018
+ * @since 1.8 (JDK), Mar.01/2018
  */
 @Entity
-@Table(name = "todo")
+@Table(name = "jbeat_employee")
 @Data
 @SuppressWarnings("ALL")
-public class TodoEntity {
+public class JBeatEmployeeEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "todo_seq")
-    @SequenceGenerator(name = "todo_seq", sequenceName = "todo_sequence", allocationSize = 1)
-    private Long id;
-    private String summary;
-    private String description;
+    private Integer id;
+
+    @Basic(optional = false)
+    private String name;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "id")
+    private JBeatAddressEntity address;
 }

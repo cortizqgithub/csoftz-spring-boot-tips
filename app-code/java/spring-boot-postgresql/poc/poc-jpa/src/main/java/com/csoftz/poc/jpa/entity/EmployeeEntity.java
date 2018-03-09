@@ -1,15 +1,15 @@
 /*----------------------------------------------------------------------------*/
-/* Source File:   TODOENTITY.JAVA                                             */
-/* Description:   JPA To do Entity (Maps to To do domain object).             */
+/* Source File:   EMPLOYEEENTITY.JAVA                                         */
+/* Description:   JPA Employee Entity (Maps to Employee domain object).       */
 /* Author:        Carlos Adolfo Ortiz Quirós (COQ)                            */
-/* Date:          Feb.28/2018                                                 */
+/* Date:          Mar.01/2018                                                 */
 /* Last Modified: Mar.01/2018                                                 */
 /* Version:       1.1                                                         */
 /* Copyright (c), 2018 CSoftZ                                                 */
 /*----------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------
  History
- Feb.28/2018  COQ  File created.
+ Mar.01/2018  COQ  File created.
  -----------------------------------------------------------------------------*/
 
 package com.csoftz.poc.jpa.entity;
@@ -20,25 +20,40 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 /**
- * JPA To do Entity (Maps to To do domain object)
+ * JPA Employee Entity (Maps to Employee domain object)
  *
  * @author Carlos Adolfo Ortiz Quirós (COQ)
  * @version 1.1, Mar.01/2018
- * @since 1.8 (JDK), Feb.28/2018
+ * @since 1.8 (JDK), Mar.01/2018
  */
 @Entity
-@Table(name = "todo")
+@Table(name = "employee")
 @Data
 @SuppressWarnings("ALL")
-public class TodoEntity {
+public class EmployeeEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "todo_seq")
-    @SequenceGenerator(name = "todo_seq", sequenceName = "todo_sequence", allocationSize = 1)
-    private Long id;
-    private String summary;
-    private String description;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long eid;
+    private String ename;
+    private double salary;
+    private String deg;
+
+    /**
+     * Constructor with parameter
+     *
+     * @param eid    Id of Employee
+     * @param ename  Name of Employee
+     * @param salary Amount paid to Employee
+     * @param deg    Degree
+     */
+    public EmployeeEntity(Long eid, String ename, double salary, String deg) {
+        super();
+        this.eid = eid;
+        this.ename = ename;
+        this.salary = salary;
+        this.deg = deg;
+    }
 }
