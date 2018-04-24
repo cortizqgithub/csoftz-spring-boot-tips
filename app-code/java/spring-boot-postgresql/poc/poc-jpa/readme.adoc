@@ -11,6 +11,7 @@ You can use the following links as a reference.
 * Introduction to Spring Data JPA http://www.baeldung.com/the-persistence-layer-with-spring-data-jpa
 * Spring Data JPA Tutorial using Spring Boot https://javabeat.net/spring-data-jpa/
 * Spring Data JPA Tutorial https://javabeat.net/spring-data-jpa-tutorial/
+* Spring Boot + JPA + Hibernate + Oracle https://dzone.com/articles/spring-boot-jpa-hibernate-oracle
 
 == Entities
 The entities defined in the com.csoftz.poc.jpa.entity come from the many articles in link section.
